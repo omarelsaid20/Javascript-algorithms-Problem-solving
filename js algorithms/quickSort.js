@@ -1,5 +1,4 @@
 function quikSort(arr) {
-  console.log("calling");
   if (arr.length < 2) {
     return arr;
   }
@@ -14,4 +13,4 @@ function quikSort(arr) {
   return [...quikSort(less), pivot, ...quikSort(greater)];
 }
 
-console.log(quikSort([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+console.log(quikSort([5, 4, 6, 8, 9, 1, 3, 2]));
